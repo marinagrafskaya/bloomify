@@ -1,0 +1,81 @@
+@font-face {
+    font-family: "OpenSans";
+    /* Имя шрифта */
+    src: url("../fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf") format("truetype");
+    /* Путь к файлу со шрифтом */
+}
+
+html {
+    height: auto;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    font-family: "OpenSans", sans-serif;
+    align-items: center;
+    padding: 20px;
+}
+
+input[type="text"],
+select,
+input[type="password"],
+input[type="email"] {
+  font-size: 20px;
+}
+
+.mainstr {
+    margin-top: 50px;
+}
+
+.mainstr a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.mainstr img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.aut-form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 500px;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+label {
+    display: block;
+    font-size: 20px;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    text-align: center;
+}
+
+.message {
+    font-size: 20px;
+    width: 100%;
+    padding: 20px;
+}
+
+.submit-aut-reg {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    width: 100%;
+    padding: 20px;
+    background-color: #cc0095;
+}
+
+.error {
+    background-color: rgb(255, 75, 75, 0.5);
+}

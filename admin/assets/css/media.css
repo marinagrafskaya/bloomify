@@ -1,0 +1,169 @@
+@media screen and (max-width: 968px) {
+  #tr-popup {
+    display: none !important;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+
+  header .btn-menu {
+    display: block;
+    cursor: pointer;
+  }
+
+  header .btn-menu:hover {
+    cursor: pointer;
+  }
+
+  header .mein-nav {
+    display: none;
+  }
+
+  header .mein-nav div {
+    width: 100%;
+    text-align: center;
+  }
+
+  header .menu .show-mein-munu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 130px;
+    left: 0;
+    background-color: #cc0095;
+    gap: 30px;
+    padding: 30px 0;
+    z-index: 20;
+  }
+
+  header .menu .show-mein-munu a {
+    color: white;
+  }
+  header .menu .show-mein-munu a:hover {
+    display: inline-block;
+    border-bottom: 2px solid black;
+  }
+
+  footer p {
+    font-size: 15px;
+  }
+
+  footer .conteiner > div {
+    width: 100%;
+    text-align: center;
+  }
+
+  .wrapper-footer-menu {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .slide .slide-content .img,
+  .slide .slide-content .flex-new {
+    width: 100%;
+  }
+
+  .slide .slide-content .flex-new .new-title {
+    font-size: 20px;
+  }
+
+  /* Каталог */
+  select {
+    font-size: 20px;
+  }
+
+  .itemproduct {
+    width: 100%;
+  }
+
+  .itemproduct .img {
+    width: 100%;
+    margin-bottom: 20px;
+    border: none;
+  }
+
+  .basket h2,
+  .expected h2 {
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .make-an-order {
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .content,
+  .search {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .foundProduct-top {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .imgproduct {
+    width: 100%;
+  }
+
+  .info {
+    width: 50%;
+  }
+
+  .info h3 {
+    font-size: 20px;
+  }
+
+  .price,
+  .button-basket {
+    font-size: 20px;
+  }
+
+  .foundProduct h3 {
+    font-size: 20px;
+  }
+
+  table {
+    font-size: 20px;
+  }
+
+  .product-table {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .grid-add-product {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .product-table div {
+    justify-content: space-between;
+  }
+
+  .orders {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .slide .slide-content .flex-new .new-title {
+    font-size: 15px;
+  }
+
+  .product-table div {
+    font-size: 20px;
+  }
+
+  .grid-add-product input,
+  .grid-add-product label {
+    font-size: 15px;
+  }
+
+}
