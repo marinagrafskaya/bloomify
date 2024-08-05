@@ -1,7 +1,6 @@
 <?php
 session_start();
-include 'assets/connect/db.php';
-if (!$_SESSION['user']['auth'] === true) {
+if (!isset($_SESSION['user']['auth'])) {
     header("Location:  index.php");
 }
 ?>

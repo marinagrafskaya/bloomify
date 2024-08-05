@@ -1,7 +1,6 @@
 <?php
 session_start();
-include 'assets/connect/db.php';
-if (!$_SESSION['user']['auth'] === true) {
+if (!isset($_SESSION['user']['auth'])) {
     header("Location:  index.php");
 }
 ?>
@@ -31,7 +30,7 @@ if (!$_SESSION['user']['auth'] === true) {
             <div class="basket">
                 <?php
                 $id_user = $_SESSION['user']['id'];
-                if ($_SESSION['cart'][$id_user]) {
+                if (isset($_SESSION['cart'][$id_user])) {
                     echo "<input type='hidden' name='cart' value='true'>";
                     $cart = implode(',', $_SESSION['cart'][$id_user]);
                     echo "<div class='basket-product'>";
@@ -119,9 +118,14 @@ if (!$_SESSION['user']['auth'] === true) {
               
                                       <b>Пн - Сб | 9:00 - 21:00</b>
                                  </p>
-                              </div>
+                                 <p>
+                                 Выберите пункт выдачи:
+                                <input type="radio" name="adress"> 
+                                 </p>
+                                 </div>
                           </div>
                       </div>';
+                      
                 } else {
                     echo "<p class='noproduct'>Пусто</p>";
                     echo "<input type='hidden' name='cart' value='false'>";

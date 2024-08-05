@@ -1,7 +1,6 @@
 <?php
 session_start();
-include 'assets/connect/db.php';
-if ($_SESSION['user']['auth'] === true) {
+if (isset($_SESSION['user']['auth'])) {
   echo "<div class='auth' data-auth='true'></div>";
 } else {
   echo "<div class='auth' data-auth='false'></div>";
@@ -183,7 +182,7 @@ if ($_SESSION['user']['auth'] === true) {
               <h3>' . $title . '</h3>
               <div class="infoproduct">
                 <p class="product-price">' . $price . ' ₽</p>';
-          if ($_SESSION['user']['auth'] === true) {
+          if (isset($_SESSION['user']['auth'])) {
             if ($quantity > 0) {
               echo '<p class="button-basket auth-b" onclick="reset(' . $id . ', event )">В корзину</p>';
             } else {
